@@ -1,6 +1,6 @@
 Feature: Register new User
 
-  Scenario: Login user
+  Scenario: User register in system
     Given Open register form
     Then Input first name
     Then user input last name

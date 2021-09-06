@@ -18,4 +18,14 @@ public class RegisterSteps {
     public void inputFirstName() {
         registerPage.fillFirstName();
     }
+
+    @Then("user input last name")
+    public void userInputLastName() {
+        registerPage.fillLastName();
+    }
+
+    @Then("user input email")
+    public void inputPassword() {
+        registerPage.fillEmail();
+    }
 }

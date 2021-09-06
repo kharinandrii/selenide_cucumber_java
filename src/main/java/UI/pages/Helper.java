@@ -19,7 +19,6 @@ public class Helper {
 
     public void fillIn(SelenideElement element, String text) {
         element.sendKeys(text);
-
     }
 
 }
