@@ -23,6 +23,13 @@ dependencies {
     testRuntimeOnly "org.junit.vintage:junit-vintage-engine:${junitVersion}"
 
     implementation "com.codeborne:selenide:${selenideVersion}"
+
+    implementation group: 'com.github.javafaker', name: 'javafaker', version: '1.0.2'
+
+    implementation 'org.hamcrest:java-hamcrest:2.0.0.0'
+
+
+
 }
 
 test {
