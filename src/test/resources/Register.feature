@@ -6,7 +6,8 @@ Feature: Register new User
     Then Input first name
     Then user input last name
     Then user input email
+    Then user input phone
     Then Input password
     Then Input password comfirm
-    Then Click "Sign in" button span
-    Then Content with "Welcome on board" visible
+    Then click on checkbox
+    Then click on register button

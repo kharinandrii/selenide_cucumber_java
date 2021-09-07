@@ -25,11 +25,31 @@ public class RegisterSteps {
     }
 
     @Then("user input email")
-    public void inputPassword() {
+    public void inputEmail() {
         registerPage.fillEmail();
+    }
+    @Then("Input password")
+    public void inputPassword() {
+        registerPage.fillPassword();
     }
 
     @Then("Input password comfirm")
     public void inputPasswordComfirm() {
+        registerPage.fillPasswordConfirm();
+    }
+
+    @Then("click on checkbox")
+    public void clickOnCheckbox() {
+        registerPage.clickOnAgree();
+    }
+
+    @Then("user input phone")
+    public void userInputPhone() {
+        registerPage.fillPhone();
+    }
+
+    @Then("click on register button")
+    public void clickOnRegisterButton() {
+        registerPage.clickRegisterButton();
     }
 }
