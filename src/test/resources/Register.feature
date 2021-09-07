@@ -1,3 +1,4 @@
+
 Feature: Register new User
 
   Scenario: User register in system

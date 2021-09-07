@@ -28,4 +28,8 @@ public class RegisterSteps {
     public void inputPassword() {
         registerPage.fillEmail();
     }
+
+    @Then("Input password comfirm")
+    public void inputPasswordComfirm() {
+    }
 }
