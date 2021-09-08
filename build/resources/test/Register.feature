@@ -12,3 +12,4 @@ Feature: Register new User
     Then click on checkbox
     Then click on register button
     Then check on Your store page
+    Then open edit profile form
