@@ -9,6 +9,6 @@ public class Hooks {
     Params params = new Params();
     @Before
     public void openSite() {
-        open(params.baseUrl);
+        open(params.BASE_URL);
     }
 }
