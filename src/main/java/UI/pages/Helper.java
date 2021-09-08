@@ -20,5 +20,8 @@ public class Helper {
     public void fillIn(SelenideElement element, String text) {
         element.sendKeys(text);
     }
+    public void checkTextIn(SelenideElement element, String text) {
+        //TODO дописать метод для получения текста с элемента и его проверки на совпадение - возможно метод будет не воид
+    }
 
 }

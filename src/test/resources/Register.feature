@@ -11,3 +11,4 @@ Feature: Register new User
     Then Input password comfirm
     Then click on checkbox
     Then click on register button
+    Then check on Your store page

@@ -2,12 +2,14 @@ package steps.Hooks;
 
 import UI.pages.HomePage;
 import UI.pages.RegisterPage;
+import UI.pages.YourStorePage;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 
 public class RegisterSteps {
     HomePage homePage = new HomePage();
     RegisterPage registerPage = new RegisterPage();
+    YourStorePage yourStorePage = new YourStorePage();
 
     @Given("Open register form")
     public void openRegisterForm() {
@@ -51,5 +53,10 @@ public class RegisterSteps {
     @Then("click on register button")
     public void clickOnRegisterButton() {
         registerPage.clickRegisterButton();
+    }
+
+    @Then("check on Your store page")
+    public void checkOnYourStorePage() {
+        yourStorePage.checkCongratulationsText();
     }
 }
