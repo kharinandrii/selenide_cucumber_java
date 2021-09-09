@@ -28,5 +28,9 @@ public class Helper {
           return false;
       }
     }
-//TODO надо дописать сценарий для проверки корректного заполнения полей
+    public void checkValueIn(SelenideElement element, String expectedValue) {
+        String actualValue = element.getValue();
+        actualValue.equals(expectedValue);
+
+    }
 }

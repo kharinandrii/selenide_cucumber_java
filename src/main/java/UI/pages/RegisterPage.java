@@ -53,6 +53,7 @@ public class RegisterPage extends Helper{
     public void fillPhone() {
         String phone = faker.phoneNumber().cellPhone();
         fillIn(phoneField, phone);
+        myMap.put("phone", phone);
     }
 
     public void clickRegisterButton() {

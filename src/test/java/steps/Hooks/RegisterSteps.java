@@ -50,7 +50,7 @@ public class RegisterSteps {
         registerPage.fillPhone();
     }
 
-    @Then("click on register button")
+    @Then("click on Continue button")
     public void clickOnRegisterButton() {
         registerPage.clickRegisterButton();
     }
