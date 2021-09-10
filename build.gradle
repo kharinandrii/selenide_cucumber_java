@@ -27,7 +27,7 @@ dependencies {
     implementation group: 'com.github.javafaker', name: 'javafaker', version: '1.0.2'
 
     implementation 'org.hamcrest:java-hamcrest:2.0.0.0'
-
+    testImplementation 'io.rest-assured:rest-assured:4.4.0'
 
 
 }
