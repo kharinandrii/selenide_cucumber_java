@@ -33,5 +33,13 @@ public class Helper {
         actualValue.equals(expectedValue);
 
     }
+    public boolean containTextIn(SelenideElement element, String text) {
+        String actualText = element.getText();
+        if(actualText.contains(text)){
+            return true;
+        }else {
+            return false;
+        }
+    }
 }
 //TODO - for rest-assured -> petstore.swagger.io

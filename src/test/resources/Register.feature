@@ -18,3 +18,8 @@ Feature: Register new User
     Then check Email in Edit form
     Then check Phone in Edit form
     Then click on Continue button
+    Then check message after update profile
+    Then open home page
+    Then choose Mac in desktop category
+    Then add Mac to cart
+    Then check success message for category page

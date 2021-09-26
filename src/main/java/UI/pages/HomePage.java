@@ -9,11 +9,19 @@ import static com.codeborne.selenide.Selenide.open;
 
 public class HomePage extends Helper {
 
-    SelenideElement lnkRegister = $(By.xpath("//*[text() = 'Register']"));
-    SelenideElement sltMyAccount = $(By.xpath("//*[text() = 'My Account']"));
+    final private SelenideElement lnkRegister = $(By.xpath("//*[text() = 'Register']")),
+            sltMyAccount = $(By.xpath("//*[text() = 'My Account']")),
+            drobdownDesktop = $(By.xpath("//*[@id='menu']//*[@class='dropdown']/a[text()='Desktops']")),
+            macProduct = $(By.xpath("//*[@id='menu']//*[@class='dropdown-menu']//*[contains(text(), 'Mac (')]"));
 
     public void clickOnRegiserLnk() {
         clickOn(sltMyAccount);
         clickOn(lnkRegister);
+    }
+
+    public void chooseMac() {
+        clickOn(drobdownDesktop);
+        clickOn(macProduct);
+
     }
 }

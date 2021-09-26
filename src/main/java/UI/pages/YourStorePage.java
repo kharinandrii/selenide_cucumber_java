@@ -14,7 +14,9 @@ public class YourStorePage extends Helper {
     final private SelenideElement headerText = $(By.xpath("//*[@id='content']/h1")),
                                   continueButton = $(By.xpath("//*[text()='Continue']")),
                                   congratulationMessage = $(By.xpath("//*[@id='content']/p[1]")),
-                                  editProgileLnk = $(By.xpath("//*[@id='content']//*[text()='Edit Account']"));
+                                  editProgileLnk = $(By.xpath("//*[@id='content']//*[text()='Edit Account']")),
+                                  successMessage = $(By.xpath("//*[@id='account-account']/div")),
+                                  homeLink = $(By.xpath("//*[@id='account-account']//*[@class='fa fa-home']"))  ;
 
 
 
@@ -27,4 +29,11 @@ public class YourStorePage extends Helper {
         clickOn(editProgileLnk);
     }
 
+    public void openHomePage() {
+        clickOn(homeLink);
+    }
+
+    public void checkSuccessMessageAfterUpdateProfile() {
+        checkTextIn(successMessage,params.SUCCESS_MESSAGE_UPDATE_PROFILE);
+    }
 }

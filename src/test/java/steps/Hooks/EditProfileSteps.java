@@ -24,4 +24,6 @@ public class EditProfileSteps {
     public void checkPhoneInEditForm() {
         editProfilePage.checkPhone();
     }
+
+
 }

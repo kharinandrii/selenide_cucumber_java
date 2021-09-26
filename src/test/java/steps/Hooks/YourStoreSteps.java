@@ -15,4 +15,14 @@ public class YourStoreSteps {
     public void openEditProfileForm() {
         yourStorePage.openEditProfile();
     }
+
+    @Then("open home page")
+    public void openHomePage() {
+        yourStorePage.openHomePage();
+    }
+
+    @Then("check message after update profile")
+    public void checkMessage() {
+        yourStorePage.checkSuccessMessageAfterUpdateProfile();
+    }
 }
