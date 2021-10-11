@@ -20,8 +20,11 @@ public class Helper {
     public void fillIn(SelenideElement element, String text) {
         element.sendKeys(text);
     }
+    public String getTextIn(SelenideElement element){
+       return element.getText();
+    }
     public Boolean checkTextIn(SelenideElement element, String text) {
-       String actualText = element.getText();
+       String actualText = getTextIn(element);
       if(actualText.equals(text)){
           return true;
       }else {

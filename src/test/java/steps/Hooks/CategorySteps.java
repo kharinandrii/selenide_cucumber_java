@@ -9,11 +9,16 @@ public class CategorySteps {
 
     @Then("add Mac to cart")
     public void addMacToCart() {
-        categoryPage.addMacToCart();
+        categoryPage.addMacToCartAndGetTitle();
     }
 
     @Then("check success message for category page")
     public void checkSuccessMessageForCategoryPage() {
         categoryPage.checkSuccessMessage();
+    }
+
+    @Then("open cart")
+    public void openCart() {
+        categoryPage.openCart();
     }
 }

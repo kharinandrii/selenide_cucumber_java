@@ -23,3 +23,5 @@ Feature: Register new User
     Then choose Mac in desktop category
     Then add Mac to cart
     Then check success message for category page
+    Then open cart
+    Then check product name in cart
