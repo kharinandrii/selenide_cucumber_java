@@ -12,6 +12,7 @@ public class CategoryPage extends Helper {
             SuccessMessage = $(By.xpath("//*[contains(@class,'alert-success')]")),
             cartLnk = $(By.xpath("//a[text()='shopping cart']"));
 
+
     Params params = new Params();
 
 
@@ -29,4 +30,6 @@ public class CategoryPage extends Helper {
     public void openCart() {
         clickOn(cartLnk);
     }
+
+
 }

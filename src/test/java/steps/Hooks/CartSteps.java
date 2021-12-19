@@ -11,4 +11,14 @@ public class CartSteps {
     public void checkProductNameInCart() {
         cartPage.checkProductName();
     }
+
+    @Then("check product quantity")
+    public void checkProductQuantity() {
+        cartPage.checkQuantity("1");
+    }
+
+    @Then("click on Checkout")
+    public void clickOnCheckout() {
+        cartPage.clickOnCheckout();
+    }
 }

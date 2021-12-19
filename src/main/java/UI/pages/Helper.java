@@ -1,5 +1,6 @@
 package UI.pages;
 
+import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.SelenideElement;
 import com.github.javafaker.Faker;
 
@@ -24,6 +25,7 @@ public class Helper {
        return element.getText();
     }
     public Boolean checkTextIn(SelenideElement element, String text) {
+        element.shouldBe(Condition.visible);
        String actualText = getTextIn(element);
       if(actualText.equals(text)){
           return true;

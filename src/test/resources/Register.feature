@@ -25,3 +25,11 @@ Feature: Register new User
     Then check success message for category page
     Then open cart
     Then check product name in cart
+    Then check product quantity
+    Then click on Checkout
+    Then fill name on billing form
+    Then fill lastname
+    Then fill address
+    Then fill city
+    Then fill postcode
+    Then check country
